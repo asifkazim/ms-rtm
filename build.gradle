@@ -15,9 +15,27 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    runtimeOnly 'mysql:mysql-connector-java'
+
+//    implementation 'io.springfox:springfox-swagger2:2.4.0'
+//    implementation 'io.springfox:springfox-swagger-ui:2.4.0'
+    implementation 'io.springfox:springfox-boot-starter:3.0.0'
+
+
+    //Lombok and Mapstruct
+    compileOnly "org.mapstruct:mapstruct:1.4.2.Final"
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor "org.mapstruct:mapstruct-processor:1.4.2.Final"
+    annotationProcessor 'org.projectlombok:lombok'
+
+    //Minio
+    implementation group: 'io.minio', name: 'minio', version: '8.2.1'
 }
 
-test {
-    useJUnitPlatform()
-}
+
+//test {
+//    useJUnitPlatform()
+//}
