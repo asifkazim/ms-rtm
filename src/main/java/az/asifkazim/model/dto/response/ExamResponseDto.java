@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ExamResponseDto {
 
+    private Long id;
     private String name;
     private String type;
     private boolean active;

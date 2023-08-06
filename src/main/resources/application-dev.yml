@@ -26,7 +26,7 @@ file:
 
 
 minio:
-  url: http://127.0.0.1:9090/
+  url: http://127.0.0.1:9000/
   bucket: rtm
   access-key: minioadmin
   secret-key: minioadmin
